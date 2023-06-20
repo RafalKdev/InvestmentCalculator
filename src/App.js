@@ -32,7 +32,7 @@ const App = () => {
     <div>
       <Header />
       <UserInput onCalculate={calculateHandler} />
-      {!userInput && <p>No Investment Calculate</p>}
+      {!userInput && <p className="paragraph">No Investment Calculate</p>}
       {userInput && (
         <ResultsTable
           data={yearlyData}
